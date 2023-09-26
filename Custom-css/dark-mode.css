@@ -1,0 +1,50 @@
+/* ===========================================
+THIS SECTION IS FOR DARK MODE!!!!
+============================================== */
+
+body.dark-mode{
+    background: rgb(0, 0, 0);
+    color: white;
+}
+
+.dark-mode .navbar-brand{
+    color: white !important;
+}
+
+.dark-mode .offcanvas{
+    background: rgb(56, 56, 56);
+}
+
+.dark-mode .fa-times{
+    color: white;
+}
+
+.dark-mode .nav-link{
+    color: white !important;
+}
+
+.dark-mode .theme-btn{
+    background: none;
+    border: none;
+}
+
+
+/* ==== HERO SECTION ===== */
+.dark-mode .hero-section{
+    background: url('../image/background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dark-mode .modal-content{
+    background: black !important;
+    border: 1px solid white;
+}
+
+.dark-mode .modal-close{
+    background: transparent;
+}
+
+.dark-mode .fa-github{
+    color: white;
+}

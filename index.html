@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=PT+Sans&family=Poppins:wght@300;400;600&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap link -->
+    <link href="asset/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="asset/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="asset/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="asset/vendor/aos/aos.css" rel="stylesheet">
+    <link href="asset/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="asset/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="Custom-css/style.css">
+    <link rel="stylesheet" href="Custom-css/responsiveness.css">
+    <link rel="stylesheet" href="Custom-css/dark-mode.css">
+
+    <!-- Responsiveness -->
+    <link rel="stylesheet" href="Custom-css/responsiveness.css">
+    <title>Portfolio</title>
+</head>
+<body>
+
+    <!-- NAVBAR SECTION -->
+    <nav class="navbar navbar-expand-lg py-4">
+        <div class="container-fluid">
+          <a class="navbar-brand mx-4" href="">My Portfolio</a>
+          <button class="navbar-toggler rounded-0 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fas fa-bars fs-1"></i>
+          </button>
+          <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+              <div class="offcanvas-header">
+                <button type="button" class="btn btn-x ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <i class="fa fas fa-times fs-1"></i>
+                </button>
+              </div>
+              <div class="offcanvas-body">
+                  <div class="navbar-nav ms-auto gap-5 mx-2">
+                      <a class="nav-link" aria-current="page" href="#">About
+                        <div class="underline"></div>
+                      </a>
+                      <a class="nav-link" href="#">Skills
+                        <div class="underline"></div>
+                      </a>
+                      <a class="nav-link" href="#">Project
+                        <div class="underline"></div>
+                      </a>
+                      <a class="nav-link" href="#">Certificate
+                        <div class="underline"></div>
+                      </a>
+                      <a class="nav-link" href="#">Contact
+                        <div class="underline"></div>
+                      </a>
+                    </div>
+
+                    <div class="theme">
+                        <button class="btn btn-dark mx-4 theme-btn" id="theme-toggle"><i class="bi bi-moon-fill"></i></button>
+                    </div>
+              </div>
+          </div>
+        </div>
+    </nav>
+
+
+    <!-- HERO SECTION -->
+
+    <div class="container-fluid">
+        <div class="row hero-section">
+            <div class="col-lg-6 col-sm-12">
+                <div class="biography">
+                    <div class="display-6 mx-5 fs-4 intro-name">Hi, I'm Victor Idahosa</div>
+                </div>
+                <div class="biography">
+                    <p class="mx-5 introduction fw-bold">A Full Stack Web Developer & Graphics Designer</p>
+                </div>
+                <div class="biography">
+                    <p class="mx-5 fs-5 fw-light intro-location">from Nigeria, i'm experience in creating responsive and user friendly website. I'm passionate, talented and very hardworking.</p>
+                    <button class="btn connect-btn mx-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Let's connect</button>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 biography-img align-items-center">
+                <div class="img-wrapper m-auto" style="width: 70%;">
+                    <img src="image/barnabas.png" alt="barnabas" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL SECTION -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                  <h1 class="modal-title fs-5 m-auto" id="exampleModalLabel">Let's connect</h1>
+                  <button type="button" class="modal-close border-0" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="fa fa-times"></i>
+                  </button>
+                </div>
+                <div class="modal-body text-center">
+                  <a href="https://github.com/osatohawen1997" class="btn">
+                    <i class="fa fab fa-github fs-1"></i>
+                  </a>
+                  <a href="" class="btn">
+                    <i class="fa fab fab fa-twitter text-info fs-1"></i>
+                  </a>
+                  <a href="" class="btn">
+                    <i class="fa fab fab fa-telegram fs-1"></i>
+                  </a>
+                  <a href="" class="btn">
+                    <i class="fa fab fab fa-whatsapp text-success fs-1"></i>
+                  </a>
+                  <a href="" class="btn">
+                    <i class="fa fab fab fa-linkedin-in fs-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+        </div>
+          
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <!-- <div class="container-fluid about">
+        <div class="row">
+            <div class="col-lg-12 border">pkswks</div>
+        </div>
+    </div> -->
+    
+      
+
+
+    <!-- custom js -->
+    <script src="custom-js/main.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="asset/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="asset/vendor/aos/aos.js"></script>
+    <script src="asset/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="asset/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="asset/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="asset/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="asset/vendor/php-email-form/validate.js"></script>
+</body>
+</html>

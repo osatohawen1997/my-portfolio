@@ -1,0 +1,169 @@
+body{
+    font-family: 'poppins', Montserrat;
+}
+
+
+
+
+
+
+/* =============================================
+            NAVBAR SECTION
+================================================ */
+
+.navbar-brand{
+    font-weight: 800;
+    
+}
+
+
+
+.navbar-toggler{
+    width: 2.5rem;
+    height: 2rem;
+    padding: 0;
+}
+
+.navbar-toggler:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.offcanvas{
+    width: 60% !important;
+}
+
+.nav-link{
+    position: relative;
+    color: black;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.nav-link .underline{
+    position: absolute;
+    left: -100%;
+    width: 75%;
+    height: 3px;
+    background: linear-gradient(to right, rgb(188, 15, 236), rgb(47, 33, 243));
+}
+
+.nav-link:hover .underline{
+    left: 100%;
+    transition: 2s;
+}
+
+.theme-btn{
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    border-radius: 100%;
+}
+
+.btn-x:focus{
+    box-shadow: none;
+    border: none;
+}
+
+/* ======= HERO SECTION ======= */
+.hero-section{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+    overflow-x: hidden;
+    background: url('../image/undefined.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.biography{
+    animation: slide-in 2s ease-in-out;
+    animation-fill-mode: forwards;
+    transform: translateX(-100%);
+}
+
+@keyframes slide-in{
+    0%{
+        transform: translateX(-100%);
+    }
+
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@-moz-keyframes slide-in{
+    0%{
+        transform: translateX(-100%);
+    }
+
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+.biography:nth-child(2){
+    animation-delay: 500ms;
+}
+
+.biography:nth-child(3){
+    animation-delay: 1000ms;
+}
+
+.img-wrapper{
+    animation: slide 2s ease-in-out;
+    animation-fill-mode: forwards;
+    transform: translateX(100%);
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(130%);
+    }
+
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@-moz-keyframes slide-in{
+    0%{
+        transform: translateX(150%);
+    }
+
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+.introduction{
+    font-size: 2.3rem;
+}
+
+.connect-btn{
+    background: rgb(188, 15, 236);
+    color: white;
+}
+
+.connect-btn:hover{
+    background: rgb(165, 12, 207) !important;
+    color: white !important;
+}
+
+.modal-close{
+    background: transparent;
+}
+
+.fa-telegram,
+.fa-linkedin-in{
+    color: rgb(37, 158, 215);
+}
+
+/* ====== ABOUT SECTION ======= */
+.about{
+    margin-top: 55%;
+   
+}

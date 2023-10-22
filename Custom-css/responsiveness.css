@@ -1,12 +1,14 @@
 /* ========== NAVBAR ========= */
 
-@media(max-width: 991px){
+@media(max-width: 991.98px){
     .navbar{
         background: linear-gradient(to right, rgb(188, 15, 236), rgb(47, 33, 243));
     }
 
     .navbar-brand{
         color: white !important;
+        transform: scale(1.0) !important;
+        transition: 0s;
     }
 
     .navbar-nav{
@@ -40,9 +42,10 @@
     .underline{
         display: none;
     }
+
 }
 
-@media(max-width: 767px){
+@media(max-width: 767.98px){
     .navbar-brand{
         margin-left: .5rem !important;
     }
@@ -50,64 +53,75 @@
 
 /* ======= HERO SECTION ========== */
 
-@media(max-width: 991px){
+@media(max-width: 991.98px){
     .hero-section{
-        row-gap: 2rem;
+        margin-top: 20%;
+        flex-direction: column;
+        row-gap: 4rem;
         justify-content: center;
+        
+    }
+
+    .hero-col{
+        width: 100%;
+        text-align: center;
     }
 
     .biography-img{
-        width: 90% !important;
+        width: 70% !important;
     }
 
     .img-wrapper{
         width: 80% !important;
     }
+
+    .intro-location{
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
 }
 
-@media(max-width: 767px){
-   
+@media(max-width: 767.98px){
+    .hero-section{
+        margin-top: 25%;
+    }
+
     .intro-name{
         font-size: 1.2rem !important;
     }
     
     .introduction{
         font-size: 2rem;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
 
     .intro-location{
         font-size: 1.1rem !important;
-    }
-}
-
-@media(max-width: 575px){
-    
-    .introduction{
-        font-size: 1.6rem;
-    }
-}
-
-/* ===== ABOUT SECTION ===== */
-@media(max-width: 991.98px){
-    .about{
-        margin-top: 80rem;
-    }
-}
-
-@media(max-width: 767.98px){
-    .about{
-        margin-top: 70rem;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
 }
 
 @media(max-width: 575.98px){
-    .about{
-        margin-top: 53rem;
+    .hero-section{
+        margin-top: 30%;
+    }
+
+    .biography-img{
+        width: 100% !important;
+    }
+
+    .introduction{
+        margin-top: .5rem !important;
+        font-size: 1.6rem;
     }
 }
 
-@media(max-width: 312px){
-    .about{
-       margin-top: 60rem;
+@media(max-width: 420px){
+    .hero-section{
+        
+        padding-top: 3rem;
     }
 }
+/* ===== ABOUT SECTION ===== */

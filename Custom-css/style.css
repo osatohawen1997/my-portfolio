@@ -2,21 +2,32 @@ body{
     font-family: 'poppins', Montserrat;
 }
 
-
-
-
-
+.header{
+    overflow-x: hidden;
+    background: url('../image/undefined.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /* =============================================
             NAVBAR SECTION
 ================================================ */
 
-.navbar-brand{
-    font-weight: 800;
-    
+.navbar{
+    width: 100%;
+    left: 0;
+    z-index: +1;
 }
 
+.navbar-brand{
+    font-weight: 800;
+    transition: 1s;
+}
 
+.navbar-brand:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
 
 .navbar-toggler{
     width: 2.5rem;
@@ -66,17 +77,76 @@ body{
 }
 
 /* ======= HERO SECTION ======= */
+
 .hero-section{
-    position: absolute;
-    width: 100%;
+    align-items: center;
+    margin-top: 12%;
+}
+
+.hero-col{
+    
+    width: 50%;
+}
+
+.svg1{
     top: 0;
-    z-index: -1;
-    padding-top: 8rem;
-    padding-bottom: 5rem;
-    overflow-x: hidden;
-    background: url('../image/undefined.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    left: 5%;
+    animation: svg1 20s ease-in-out infinite;
+}
+
+@keyframes svg1{
+    0%{
+        left: 18%;
+    }
+
+    25%{
+        left: -10%;
+    }
+
+    50%{
+        left: 18%;
+    }
+
+    75%{
+        left: -10%;
+    }
+
+    100%{
+        left: 18%;
+    }
+}
+
+
+.svg2{
+    bottom: 0;
+    right: 5%;
+    animation: svg2 20s ease-in-out infinite;
+}
+
+@keyframes svg2{
+    0%{
+        right: 10%;
+    }
+
+    25%{
+        right: -10%;
+    }
+
+    50%{
+        right: 10%;
+    }
+
+    75%{
+        right: -10%;
+    }
+
+    100%{
+        right: 10%;
+    }
+}
+
+.biography-img{
+    width: 50%;
 }
 
 .biography{
@@ -141,16 +211,59 @@ body{
 
 .introduction{
     font-size: 2.3rem;
+    transition: 1s;
+}
+
+.intro-name{
+    transition: 1s;
+}
+
+.intro-location{
+    transition: 1s;
 }
 
 .connect-btn{
-    background: rgb(188, 15, 236);
+    padding-top: .7rem !important;
+    padding-bottom: .7rem !important;
+    border: 0;
+    letter-spacing: 2px;
+    background: linear-gradient(to right, rgb(188, 15, 236), rgb(47, 33, 243));
     color: white;
+    animation: zoom 3s ease-in-out infinite;
 }
 
+@keyframes zoom{
+    0%{
+        transform: scale(1.0);
+    }
+
+    25%{
+        transform: scale(1.05);
+    }
+
+    50%{
+        transform: scale(1.0);
+    }
+
+    75%{
+        transform: scale(1.05);
+    }
+
+    100%{
+        transform: scale(1.0);
+    }
+}
+
+
+
 .connect-btn:hover{
-    background: rgb(165, 12, 207) !important;
+    /* background: rgb(165, 12, 207) !important; */
     color: white !important;
+    animation-play-state: paused;
+}
+
+.connect-btn:active{
+    animation-play-state: paused;
 }
 
 .modal-close{
@@ -163,7 +276,6 @@ body{
 }
 
 /* ====== ABOUT SECTION ======= */
-.about{
-    margin-top: 55%;
-   
-}
+/* .about{
+    margin-top: 60%;
+} */

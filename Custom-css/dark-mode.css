@@ -30,7 +30,7 @@ body.dark-mode{
 
 
 /* ==== HERO SECTION ===== */
-.dark-mode .hero-section{
+.dark-mode .header{
     background: url('../image/background.svg');
     background-repeat: no-repeat;
     background-size: cover;

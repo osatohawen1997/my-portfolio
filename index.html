@@ -30,110 +30,121 @@
     <title>Portfolio</title>
 </head>
 <body>
-
-    <!-- NAVBAR SECTION -->
-    <nav class="navbar navbar-expand-lg py-4">
-        <div class="container-fluid">
-          <a class="navbar-brand mx-4" href="">My Portfolio</a>
-          <button class="navbar-toggler rounded-0 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa fas fa-bars fs-1"></i>
-          </button>
-          <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
-              <div class="offcanvas-header">
-                <button type="button" class="btn btn-x ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+    <div class="container-fluid header">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- NAVBAR SECTION -->
+          <nav class="navbar navbar-expand-lg py-4 position-absolute">
+            <div class="container-fluid">
+              <a class="navbar-brand mx-4" href="">My Portfolio</a>
+              <button class="navbar-toggler rounded-0 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fas fa-bars fs-1"></i>
+              </button>
+              <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                <div class="offcanvas-header">
+                  <button type="button" class="btn btn-x ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
                     <i class="fa fas fa-times fs-1"></i>
-                </button>
-              </div>
-              <div class="offcanvas-body">
-                  <div class="navbar-nav ms-auto gap-5 mx-2">
-                      <a class="nav-link" aria-current="page" href="#">About
-                        <div class="underline"></div>
-                      </a>
-                      <a class="nav-link" href="#">Skills
-                        <div class="underline"></div>
-                      </a>
-                      <a class="nav-link" href="#">Project
-                        <div class="underline"></div>
-                      </a>
-                      <a class="nav-link" href="#">Certificate
-                        <div class="underline"></div>
-                      </a>
-                      <a class="nav-link" href="#">Contact
-                        <div class="underline"></div>
-                      </a>
-                    </div>
-
-                    <div class="theme">
-                        <button class="btn btn-dark mx-4 theme-btn" id="theme-toggle"><i class="bi bi-moon-fill"></i></button>
-                    </div>
-              </div>
-          </div>
-        </div>
-    </nav>
-
-
-    <!-- HERO SECTION -->
-
-    <div class="container-fluid">
-        <div class="row hero-section">
-            <div class="col-lg-6 col-sm-12">
-                <div class="biography">
-                    <div class="display-6 mx-5 fs-4 intro-name">Hi, I'm Victor Idahosa</div>
-                </div>
-                <div class="biography">
-                    <p class="mx-5 introduction fw-bold">A Full Stack Web Developer & Graphics Designer</p>
-                </div>
-                <div class="biography">
-                    <p class="mx-5 fs-5 fw-light intro-location">from Nigeria, i'm experience in creating responsive and user friendly website. I'm passionate, talented and very hardworking.</p>
-                    <button class="btn connect-btn mx-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Let's connect</button>
-                </div>
-            </div>
-            <div class="col-lg-6 col-sm-12 biography-img align-items-center">
-                <div class="img-wrapper m-auto" style="width: 70%;">
-                    <img src="image/barnabas.png" alt="barnabas" class="img-fluid">
-                </div>
-            </div>
-        </div>
-
-        <!-- MODAL SECTION -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header border-bottom-0">
-                  <h1 class="modal-title fs-5 m-auto" id="exampleModalLabel">Let's connect</h1>
-                  <button type="button" class="modal-close border-0" data-bs-dismiss="modal" aria-label="Close">
-                    <i class="fa fa-times"></i>
                   </button>
                 </div>
-                <div class="modal-body text-center">
-                  <a href="https://github.com/osatohawen1997" class="btn">
-                    <i class="fa fab fa-github fs-1"></i>
+                <div class="offcanvas-body">
+                <div class="navbar-nav ms-auto gap-5 mx-2">
+                  <a class="nav-link" aria-current="page" href="#">About
+                    <div class="underline"></div>
                   </a>
-                  <a href="" class="btn">
-                    <i class="fa fab fab fa-twitter text-info fs-1"></i>
+                  <a class="nav-link" href="#">Skills
+                    <div class="underline"></div>
                   </a>
-                  <a href="" class="btn">
-                    <i class="fa fab fab fa-telegram fs-1"></i>
+                  <a class="nav-link" href="#">Project
+                    <div class="underline"></div>
                   </a>
-                  <a href="" class="btn">
-                    <i class="fa fab fab fa-whatsapp text-success fs-1"></i>
+                  <a class="nav-link" href="#">Certificate
+                    <div class="underline"></div>
                   </a>
-                  <a href="" class="btn">
-                    <i class="fa fab fab fa-linkedin-in fs-1"></i>
+                  <a class="nav-link" href="#">Contact
+                    <div class="underline"></div>
                   </a>
+                </div>
+
+                <div class="theme">
+                  <button class="btn btn-dark mx-4 theme-btn" id="theme-toggle"><i class="bi bi-moon-fill"></i></button>
                 </div>
               </div>
             </div>
+          </nav>
+
+          <div class="hero-section d-flex pb-4">
+            <div class="hero-col">
+              <div class="biography">
+                <div class="display-6 mx-5 fs-4 intro-name">Hi, My name is Victor Idahosa</div>
+              </div>
+              <div class="biography">
+                <p class="mx-5 introduction fw-bold">A Full Stack Web Developer & Graphics Designer</p>
+              </div>
+              <div class="biography">
+                <p class="mx-5 fs-5 fw-light intro-location">from Nigeria, i'm an upcoming developer who's willing to learn. I'm good at creating responsive and user friendly website, I'm passionate, talented and very hardworking.</p>
+                <button class="btn connect-btn mx-5 px-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Let's connect</button>
+              </div>
+            </div>
+            <div class="biography-img align-items-center">
+              <div class="img-wrapper m-auto" style="width: 70%;">
+                <svg width="90" height="90" viewBox="0 0 90 90" fill="none" class="position-absolute svg1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" transform="scale(1 -1)"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.707 30 3.333 35.033l12.58 10.933 5.03 4.373 4.373 -5.033 5.133 -5.9 7.547 6.56 5.033 4.373 4.37 -5.033 5.127 -5.897 7.543 6.557 5.033 4.373 4.37 -5.033 6.563 -7.547 -5.033 -4.373 -6.56 7.547L51.863 30l-4.373 5.033h0.007l-5.127 5.9L29.79 30l-2.943 3.387 -6.56 7.547L7.707 30Z" fill="rgb(188, 15, 236)"/></svg>
+
+                <img src="image/barnabas.png" alt="barnabas" class="img-fluid">
+
+                <svg width="90" height="90" viewBox="0 0 90 90" fill="none" class="position-absolute svg2" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" transform="scale(1 -1)"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.707 30 3.333 35.033l12.58 10.933 5.03 4.373 4.373 -5.033 5.133 -5.9 7.547 6.56 5.033 4.373 4.37 -5.033 5.127 -5.897 7.543 6.557 5.033 4.373 4.37 -5.033 6.563 -7.547 -5.033 -4.373 -6.56 7.547L51.863 30l-4.373 5.033h0.007l-5.127 5.9L29.79 30l-2.943 3.387 -6.56 7.547L7.707 30Z" fill="rgb(47, 33, 243)"/></svg>
+              </div>
+            </div>
+
+            <!-- MODAL SECTION -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header border-bottom-0">
+                    <h1 class="modal-title fs-5 m-auto" id="exampleModalLabel">Let's connect</h1>
+                    <button type="button" class="modal-close border-0" data-bs-dismiss="modal" aria-label="Close">
+                      <i class="fa fa-times"></i>
+                    </button>
+                  </div>
+                  <div class="modal-body text-center">
+                    <a href="https://github.com/osatohawen1997" class="btn">
+                      <i class="fa fab fa-github fs-1"></i>
+                    </a>
+                    <a href="https://x.com/OzOzdata" class="btn">
+                      <i class="fa fab fab fa-twitter text-info fs-1"></i>
+                    </a>
+                    <a href="" class="btn">
+                      <i class="fa fab fab fa-telegram fs-1"></i>
+                    </a>
+                    <a href="" class="btn">
+                      <i class="fa fab fab fa-whatsapp text-success fs-1"></i>
+                    </a>
+                    <a href="" class="btn">
+                      <i class="fa fab fab fa-linkedin-in fs-1"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
         </div>
-          
+      </div>
     </div>
 
     <!-- ABOUT SECTION -->
-    <!-- <div class="container-fluid about">
-        <div class="row">
-            <div class="col-lg-12 border">pkswks</div>
+    <div class="container-fluid bg-danger">
+      <div class="row about">
+        <div class="col-lg-12 border">
+          <h2>osjj</h2>
+          
+          <!-- License: MIT. Made by css.gg: https://github.com/astrit/css.gg -->
         </div>
-    </div> -->
+      </div>
+    </div>
+
+    
+    
+  
+
     
       
 
